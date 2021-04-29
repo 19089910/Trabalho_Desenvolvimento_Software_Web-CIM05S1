@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"><!--caracter para o brawser-->
+		<title> Formulario </title>
+		<link rel="stylesheet" href="https://localhost/web/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+		<link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">
+		<script src="//code.jquery.com/jquery-2.1.0.min.js" type="text/javascript"></script>
+	</head>
+	
+	<body>
+	<div class="container">
+	
+	<script>
+	$(document).ready(function(){
+	$('#nav-menu').click(function(){
+		$('ul.nav-list').addClass('open').slideToggle('200');
+	});
+	});
+	</script>
+	
+	<style>
+	p {
+	 color: blue;
+	  background-color: yellow;
+	  text-align: center;
+	  line-height: 14px; <!-- tamanho da altura de cada linha -->
+	  letter-spacing: 3px; <!-- tamanho do espaço entre cada letra -->
+	  word-spacing: 5px; <!-- tamanho do espaço entre cada palavra -->
+	  text-indent: 30px; <!--tamanho da margem da primeira linha do texto-->
+	}
+	</style>
+	
+		<header>
+			<div class="center">
+				<img src="https://localhost/web/logo/logo.png" alt="logo pc" title="logo" width="80" height="80">
+				
+				<nav cass="nav-bar">
+					<div class="nav-conteiner">
+						<a id="nav-menu" class="nav-menu">☰ Menu</a>
+						<ul class="nav-list "  id="nav">
+							<li><a href="https://localhost/web/" title="Home" id="tile1"><i class="icon ion-ios7-home-outline"></i>Home</a>
+							<li><a href="https://localhost/web/Serviços.html" title="Serviços" target="blank" id="tile4"><i class="ion-ios7-monitor-outline"></i>Serviços</a></li>
+							<li><a href="https://localhost/web/Institucional.html" title="Institucional" target="blank" id="tile2"><i class="icon ion-ios7-person-outline"></i>Institucional</a></li>
+							<li><a href="https://localhost/web/Equipe.html" title="Equipe" target="blank" id="tile5"><i class="ion-ios7-people-outline"></i>Equipe</a></li>
+							<li><a href="https://localhost/web/Contato.html" title="Contato" target="blank" id="tile8"><i class="ion-ios7-email-outline"></i>Contato</a></li>
+						</ul>
+					</div>
+				</nav>
+				
+				<h3>Preencha o formulário com:</h3>
+					<li><i>
+						<a href="https://www.sidia.com/" title="sidia" target="blank">Sugestões,</a>
+						<a href="https://www.uninorte.com.br/" title="uninorte" target="blank">Criticas</a>
+						<a href="https://localhost/web/" title="portifolio" target="blank">e Elogios</a>
+					</i></li>
+			</div>
+		</header>
+		
+		<main>
+		<div class= center>
+			<h3>Formulario de Desenvolvimento web</h3>
+			
+			<form action="processamento.php=post"><!--toda informacao gerada pelo inpute envia para o php virando variavel-->
+
+				<div class="nome">
+					<label for="nome">NOME: </label>
+					<input type="text" id="nome"> </input><!--caixa de testo do tipo="o tipo" e seu indereco digital e="id"-->
+				</div>
+
+				<div class="email">
+					<label for="email">E-MAIL: </label>
+					<input type="email" maxlength="6" id="email"> </input><!--maxlength= maximo de caracter mo input-->
+				</div>
+
+				<div class="msg">
+					<label for="msg">MENSAGEM: </label>
+					<input area ="msg" disabled id="nome"> </input><!--disabled desabilita algo-->
+				</div>
+				
+				<div class="button">
+					<button type="submit">Enviar</button>
+				</div>
+				
+			</form>
+		</div>
+		</main>
+	<div>
+	</body>
+</html>
